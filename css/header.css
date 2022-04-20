@@ -1,0 +1,41 @@
+/*头部总体样式*/
+.header{display: flex; flex-direction: column; }
+/*头部导航样式*/
+.header .header_nav{display: flex; height: 40px; line-height: 40px; font-size: 13px; padding-left: 90px; background: #41444b;}
+
+.header .header_nav ul {display: flex; justify-content: flex-start; align-items: center; }
+.header .header_nav ul li{margin: 0px 22px 0px 0px;height: 40px;line-height: 40px;color: #b5b4b4; }
+.header .header_nav ul li a{color: #b5b4b4;}
+.header .header_nav ul li a:hover{color: #f0f0f0;}
+
+.header_nav_left{display: flex; width: 70%; margin-left: 30px;}
+.header_nav_left .upDown{height: 40px;line-height: 40px;}
+.header_nav_left .upDown .contact{position: absolute; z-index: 999; display: none; left: 470px; top: 34px;}
+.header_nav_left .upDown span:hover{color: #f0f0f0;}
+
+/* 头部购买及下拉选样式 */
+.header_nav_center{display: flex; width: 15%;}
+.header_nav_center .dropDown{height: 40px; line-height: 40px;}
+.header_nav_center .dropDown .contact{position: absolute; z-index: 999; display: none; left: 1100px; top: 40px; width: 80px; padding-left: 24px;}
+.header_nav_center .dropDown:hover .contact{display:block; background: #41444b;}
+.header_nav_center .dropDown .contact li{height: 25px; line-height: 25px; text-align: center;}
+.header_nav_center .dropDown .contact li a:hover{color: #f0f0f0;}
+
+.header_nav_right{display: flex;width: 15%;}
+
+/*导航栏*/
+.header .header_box{ display: flex; justify-content: flex-start; align-items: center; padding: 0 0 0 115px;height: 60px; }
+.header .header_box .item{ width: 100px; height: 50px;}
+.header .header_box .logo{background-image: url('../img/icon.png'); background-position: -4px -362px; height: 60px; width: 189px; margin-right: 20px; margin-top: 20px;}
+.header .header_box .lis{height: 60px;}
+.header .header_box .lis ul {display: flex; align-items: center; height: 60px;}
+.header .header_box .lis ul li{float: left; margin-right: 26px;line-height: 30px;height: 30px;border-bottom: 4px solid transparent;transition: all .2s;}
+.header .header_box .lis ul li a{line-height: 37px; height: 37px;}
+.header .header_box .lis ul li a:hover{color: red;}
+.header .header_box .search_box{height: 60px;width: 250px; display: flex; align-items: center;}
+.header .header_box .search_box input{height: 35px;width: 160px;;border: 1px solid #535353; color: #999;padding: 0 15px;}
+.header .header_box .search_box .submit{height: 37px;width: 700px;background: url('../img/search.jpg'); cursor: pointer;}
+.header .header_box .search_box .history {width:190px;}
+.header .header_box .search_box .history ul {width: 170px;margin-top: 19px;margin-left: -233px;position: absolute;display: none;background: #f0f0f0;color: #000000;z-index: 15;font-size: 14px;font-family: "arial","微软雅黑", "sans-serif";font-weight: 100;}
+.header .header_box .search_box .history li{line-height:35px;height:35px;text-indent:15px;cursor:pointer;}
+.header .header_box .search_box .history li:hover{color:red;background:white;}

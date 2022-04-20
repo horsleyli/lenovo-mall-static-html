@@ -1,0 +1,27 @@
+/*左侧边栏的样式，刚开始是隐藏的*/
+.left_sidebar{position: fixed;left: 50%;margin-left: -650px;z-index: 99;width: 40px;top: 15%;text-align: center;display: none;}
+.left_sidebar li{width:30px; height:30px; text-align:center; line-height:30px; margin-top:2px;}
+.left_sidebar li a{text-decoration: none; font-size: 12px; width: 40px; display: block; margin: 0 auto; height: 30px; line-height: 26px;-webkit-transition: none; -moz-transition: none; -o-transition: none; transition: none; font-weight: 500;}
+.left_sidebar .sidebar_line {width: 10px;height: 0;font-size: 0;border-bottom: 1px solid #e5e5e5;margin: 5px auto;line-height: 0;}
+
+
+/*右侧导航栏的样式*/
+.sort {width: 70px;height: auto;z-index: 11112;position: fixed;right: 16px;top: 15%;display: none;background: #fff;box-shadow: 0px 0px 8px 0px rgb(181 181 181 / 50%);}
+.sort .sort_ul {display: flex; flex-direction: column;}
+.sort .sort_ul li a { height: 61px;}
+.sort .sort_ul img {width: 70px;}
+.sort .sort_left_ul {display: none; position: absolute; right: 70px; }
+.sort .sort_left_ul a {height: 100px;}
+.sort .sort_left_ul img {width: 210px; height: 100px;}
+
+/*点击登录注册时的遮挡层*/
+.layer{background:#000; opacity: 0.3;position:absolute;left:0;top:0;display:none;z-index:10000099;}
+/*登录注册框的样式*/
+#login,#register{position:fixed;z-index:100000100;width:330px; height:300px; left:50%; margin-left: -290px; top: 90px;background:#f0f0f0;display:none; padding: 0 125px;}
+#login img,#register img{position:absolute;right:-10px;top:-10px;display:block;width:30px;height:30px;cursor:pointer;}
+#login .login_title{text-align: center; font-size: 30px; line-height: 30px; margin-top: 60px;}
+#login .login_content{ margin-top: 50px;}
+#login .login_content .login_content_phone{ padding-left: 50px; border: solid 1px #424242;}
+#login .login_content input{text-align: center; width: 258px; height: 44px; line-height: 44px; padding-left: 20px; padding-right: 50px;}
+#login .login_content #login_content_captcha{ float: left; width: 147px; padding-left: 20px; padding-right: 50px;}
+#login .login_content #captcha_btn{ float: left; width: 110px; text-align: center;background-color: #f7f7f7;color: #3680c1;border: 1px solid #d6d6d6;height: 44px;line-height: 44px;border-left: 0;font-size: 14px;}
